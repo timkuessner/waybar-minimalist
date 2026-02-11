@@ -49,11 +49,13 @@ window#waybar {
 }
 
 #network {
+  font-family: "Font Awsome";
   padding: 0px 5px 0px 10px;
   font-size: 16px;
 }
 
 #battery {
+  font-family: "Font Awsome";
   font-size: 16px;
 }
 
@@ -70,7 +72,7 @@ window#waybar {
 }
 
 #clock {
-  padding: 0 16px;
+  padding: 0px 10px 0px 0px;
 }
 
 tooltip {
