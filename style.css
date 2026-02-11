@@ -1,8 +1,9 @@
 * {
   border: none;
   border-radius: 0;
-  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+  font-family: "SF Pro", "Inter", "Helvetica Neue", Arial, sans-serif;
   font-size: 13px;
+  font-weight: 500;
   min-height: 0;
 }
 
@@ -16,40 +17,39 @@ window#waybar {
 .modules-right {
   background: rgba(255, 255, 255, 0.3);
   border-radius: 15px;
-  padding: 0px 10px;
-  margin: 0 5px;
 }
 
 #window,
-#workspaces,
 #network,
 #battery,
 #clock {
-  padding: 0 12px;
   color: #000000;
 }
 
 #window {
-  font-weight: 500;
   padding: 0 16px;
 }
 
-#workspaces button {
-  padding: 0 8px;
-  color: #000000;
-  background: transparent;
+
+#workspaces {
+  padding: 0px 2px 0px 2px;
 }
 
-#workspaces button:hover {
-  background: rgba(0, 0, 0, 0.1);
-  box-shadow: none;
+#workspaces button {
+  transition: all 200ms ease-in-out;
+  padding: 0 5px;
+  background: #000000;
+  color: #ffffff;
+  margin: 5px;
+  border-radius: 15px;
 }
 
 #workspaces button.active {
-  background: rgba(0, 0, 0, 0.15);
+  min-width: 50px;
 }
 
 #network {
+  padding: 0px 5px 0px 10px;
   font-size: 16px;
 }
 
@@ -58,7 +58,7 @@ window#waybar {
 }
 
 #battery.charging {
-  color: #28a745;
+  color: #28a733;
 }
 
 #battery.warning:not(.charging) {
@@ -70,7 +70,6 @@ window#waybar {
 }
 
 #clock {
-  font-weight: 500;
   padding: 0 16px;
 }
 
