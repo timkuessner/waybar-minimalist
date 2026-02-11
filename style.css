@@ -1,0 +1,85 @@
+* {
+  border: none;
+  border-radius: 0;
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+  font-size: 13px;
+  min-height: 0;
+}
+
+window#waybar {
+  background: transparent;
+  color: #000000;
+}
+
+.modules-left,
+.modules-center,
+.modules-right {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  padding: 0px 10px;
+  margin: 0 5px;
+}
+
+#window,
+#workspaces,
+#network,
+#battery,
+#clock {
+  padding: 0 12px;
+  color: #000000;
+}
+
+#window {
+  font-weight: 500;
+  padding: 0 16px;
+}
+
+#workspaces button {
+  padding: 0 8px;
+  color: #000000;
+  background: transparent;
+}
+
+#workspaces button:hover {
+  background: rgba(0, 0, 0, 0.1);
+  box-shadow: none;
+}
+
+#workspaces button.active {
+  background: rgba(0, 0, 0, 0.15);
+}
+
+#network {
+  font-size: 16px;
+}
+
+#battery {
+  font-size: 16px;
+}
+
+#battery.charging {
+  color: #28a745;
+}
+
+#battery.warning:not(.charging) {
+  color: #ffc107;
+}
+
+#battery.critical:not(.charging) {
+  color: #dc3545;
+}
+
+#clock {
+  font-weight: 500;
+  padding: 0 16px;
+}
+
+tooltip {
+  background: rgba(30, 30, 30, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+}
+
+tooltip label {
+  color: #ffffff;
+}
