@@ -16,9 +16,8 @@
     "clock"
   ],
   "hyprland/window": {
-    "format": "{}",
-    "max-length": 50,
-    "separate-outputs": true
+    "format": "{class}",
+    "max-length": 50
   },
   "hyprland/workspaces": {
     "format": "{icon}",
