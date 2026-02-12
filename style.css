@@ -38,10 +38,17 @@ window#waybar {
 #workspaces button {
   transition: all 200ms ease-in-out;
   padding: 0 5px;
-  background: #000000;
-  color: #ffffff;
+  background: rgba(255, 255, 255, 0.3);
+  color: #000000;
   margin: 5px;
   border-radius: 15px;
+}
+
+#workspaces button:hover {
+  min-width: 30px;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: "SF Pro", "Inter", "Helvetica Neue", Arial, sans-serif;
 }
 
 #workspaces button.active {
